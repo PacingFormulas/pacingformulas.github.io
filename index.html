@@ -1,1 +1,54 @@
-etststsetststsetst
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/effects.css" href="effects.css">
+</head>
+    
+<body>
+ <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type a number" title="Type a number">   
+    
+<br>
+   <!-- <i class='eq sup'></i> -->
+
+<ul id="myUL">
+<div>
+<code>
+<i class='eq'>Mass
+  <hr class='line'>
+ Volume
+</i> <i class='eq'>= Density</i>
+</code>
+</div>
+ 
+<br>
+
+    <div>
+    <code> <!-- any unique TAG -->
+<i class='eq'>Velocity x Time
+</i> <i class='eq'>= Distance</i>
+    </code>
+</div>
+</ul>
+    
+</body>
+    
+<script>
+function myFunction() {
+    var input, filter, ul, line, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase(); //So all text to Upper Case
+    ul = document.getElementById("myUL");
+    line = ul.getElementsByTagName("div");
+    for (i = 0; i < line.length; i++) {
+        content = line[i].getElementsByTagName("code")[0];
+        if (content.innerHTML.toUpperCase().indexOf(filter) > -1) { //Find if a formula contain the text
+            line[i].style.display = "";
+        } else {
+            line[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+    
+</html>
