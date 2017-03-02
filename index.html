@@ -5,12 +5,23 @@
 </head>
     
 <body>
- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type a number" title="Type a number">   
+ <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type keywords" title="Type keywords">   
     
-<br>
-   <!-- <i class='eq sup'></i> -->
+   <!-- <br><br></i> -->
 
+    
 <ul id="myUL">
+  
+<!-- 
+<div>
+<i class='chap'>
+Chapter 1
+<hr>
+</i>
+<code>
+</code>
+</div> -->
+    
 <div>
     <i class='eq'>Normal Stress: σ =</i>
     <i class='eq'>P
@@ -148,11 +159,46 @@ Genernlized Hooked Law σ E ε v
 </code>
 </div>
     
+<div>
+    <pre class='eq'>Elastic torsion formula: </pre><br>
+    <i class='eq'>τ =</i>
+
+    <i class='eq'>T c
+  <hr class='line'>
+ J
+</i> 
+    <br>
+    <!-- -------------------->
+    <i class='eq'>J =</i>
+
+    <i class='eq'>1
+  <hr class='line'>
+ 2
+</i> 
+    <i class='eq'>π (c<i class='sub'>2</i><i class='sup'>4</i> - c<i class='sub'>1</i><i class='sup'>4</i>)</i>
+    
+<code>
+= / Elastic torsion formula τ T c J π
+</code>
+</div>
+    
+<div>
+    <i class='eq'>Angle of twist: Φ =</i>
+    <i class='eq'>T L
+  <hr class='line'>
+ J G
+</i> 
+<code>
+= / δ P L A E Elongation
+</code>
+</div>
+    
 </body>
     
 <script>
 function myFunction() {
     var input, filter, ul, line, a, i;
+    var chap1=0;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase(); //So all text to Upper Case
     ul = document.getElementById("myUL");
@@ -162,7 +208,14 @@ function myFunction() {
         if (content.innerHTML.toUpperCase().indexOf(filter) > -1) { //Find if a formula contain the text
             line[i].style.display = "";
         } else {
+            
             line[i].style.display = "none";
+            
+           // if (i==1) {chap1++};
+           // if (i==2) {chap1++};
+           // if (chap1!=2) {line[0].style.display = "";} else {line[0].style.display = "none";}
+            
+            
 
         }
     }
