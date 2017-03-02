@@ -14,7 +14,7 @@
 {
   font-size:0.5em;
   vertical-align:top;
-  margin:0 2px;
+  margin:-2 2px;
 }
 .sub
 {
@@ -33,4 +33,9 @@
 code
 {
   display: none;
+}
+.chap
+{
+  font:italic 2em calibri;
+  vertical-align:lefft;
 }
