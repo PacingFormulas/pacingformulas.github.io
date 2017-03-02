@@ -1,8 +1,4 @@
-div
-{
-  margin-top:20px;
-  display:inline-block;
-}
+
 .eq
 {
   display:inline-block;
@@ -22,5 +18,19 @@ div
 }
 .sub
 {
+  font-size:0.5em;
   vertical-align:bottom;
+}
+.flip-greek
+{
+    transform : rotateZ(98deg) scale(1, -1);
+}
+.result-up
+{
+    padding-bottom: 40px;
+}
+
+code
+{
+  display: none;
 }
