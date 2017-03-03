@@ -39,7 +39,7 @@
     padding-bottom: 40px;
 }
 
-.filter
+.filter, .detailOff
 {
   display: none;
 }
@@ -71,4 +71,13 @@
     background-color: orange;
     border: none;
     
+}
+.detail
+{
+    font-size: 18px;
+    color: white;
+    background-color: deepskyblue;
+  display:inline-flex;    
+    padding: 3px 5px 3px 5px; /* Add some padding */
+  vertical-align:middle;
 }
