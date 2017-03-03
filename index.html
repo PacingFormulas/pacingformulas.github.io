@@ -5,8 +5,20 @@
 </head>
     
 <body>
- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type keywords" title="Type keywords">   
+ <input class="filter-box" type="text" id="myInput" onkeyup="filterfn()" placeholder="Type keywords" title="Type keywords">   
     
+    <br>
+    <button class="greek" style="margin: 5px 0px 0 18px" type="button" onclick="filtervalue(3)">γ</button>
+    <button class="greek" type="button" onclick="filtervalue(4)">δ</button>
+    <button class="greek" type="button" onclick="filtervalue(5)">ε</button>
+    <button class="greek" type="button" onclick="filtervalue(8)">θ</button>
+    <button class="greek" type="button" onclick="filtervalue(16)">π</button>
+    <button class="greek" type="button" onclick="filtervalue(18)">σ</button>
+    <button class="greek" type="button" onclick="filtervalue(21)">Φ</button>
+    <button class="greek" type="button" onclick="filtervalue(24)">ω</button>
+    
+    <br>
+    <button class="clear-bn" style="margin: 5px 0px 0 18px" type="button" onclick="filtervalue(-1)">Clear</button>
    <!-- <br><br></i> -->
 
     
@@ -18,208 +30,200 @@
 Chapter 1
 <hr>
 </i>
-<code>
+ <code class="filter">
 </code>
 </div> -->
     
 <div>
-    <i class='eq'>Normal Stress: σ =</i>
-    <i class='eq'>P
+    <i class='eq'><i class="body">Normal Stress: σ =</i></i>
+    <i class='eq'><i class="body">P</i>
   <hr class='line'>
- A
+ <i class="body">A</i>
 </i> 
-<code>
+ <code class="filter">
 = / P A σ Normal Stress
 </code>
+    
 </div>
  
 
 <div>
-    <i class='eq'>Shearing Stress: τ =</i>
-    <i class='eq'>P
+    <i class='eq'><i class="body">Shearing Stress: τ =</i></i>
+    <i class='eq'><i class="body">P</i>
   <hr class='line'>
- A
+ <i class="body">A</i>
 </i> 
-<code>
+ <code class="filter">
 = / P A τ Shearing Stress
 </code>
 </div>
     
 
 <div>
-    <i class='eq'>Normal Strain: ε =</i>
-    <i class='eq'>δ
+    <i class='eq'><i class="body">Normal Strain: ε =</i></i>
+    <i class='eq'><i class="body">δ</i>
   <hr class='line'>
- L
+ <i class="body">L</i>
 </i> 
-<code>
+ <code class="filter">
 = / δ L ε Normal Strain
 </code>
 </div>
     
     <div>
-    <i class='eq'>σ =</i>
-    <i class='eq'>E*ε
+    <i class='eq'><i class="body">σ =</i></i>
+    <i class='eq'><i class="body">E*ε</i>
 </i> 
-<code>
+ <code class="filter">
 = E ε σ Normal Stress
 </code>
 </div>
   
     
 <div>
-    <i class='eq'>Elongation: δ =</i>
-    <i class='eq'>P L
+    <i class='eq'><i class="body">Elongation: δ =</i></i>
+    <i class='eq'><i class="body">P L</i>
   <hr class='line'>
- A E
+ <i class="body">A E</i>
 </i> 
-<code>
+ <code class="filter">
 = / δ P L A E Elongation
 </code>
 </div>
         
 <div>
-    <i class='eq'>τ<i class='sub'>ij</i> =</i>
-    <i class='eq'>G γ<i class='sub'>ij</i>
+    <i class='eq'><i class="body">τ</i><i class='sub'>ij</i>
+        <i class="body"> =</i></i>
+    <i class='eq'><i class="body">G γ</i><i class='sub'>ij</i>
 </i> 
-<code>
+ <code class="filter">
 = τ G γ
 </code>
 </div>
     
 <div>
-    <i class='eq'>γ<i class='sub'>ij</i> ≈</i>
-    <i class='eq'>tan (γ<i class='sub'>ij</i>) ≈</i>
-    <i class='eq'>Opposite
+    <i class='eq'><i class="body">γ</i><i class='sub'>ij</i>
+        <i class="body"> ≈</i></i>
+    <i class='eq'><i class="body">tan (γ</i><i class='sub'>ij</i>)
+        <i class="body"> ≈</i></i>
+    <i class='eq'><i class="body">Opposite</i>
   <hr class='line'>
- Adjacent
+ <i class="body">Adjacent</i>
 </i> 
-<code>
+ <code class="filter">
 ≈ = / γ tan Opposite Adjacent
 </code>
 </div>
     
 <div>
-    <pre class='eq'>Genernlized Hooked Law: </pre><br>
-    <i class='eq'>ε<i class='sub'>x</i> =</i>
-    <i class='eq'>σ<i class='sub'>x</i>
+    <i class='eq body'>Genernlized Hooked Law: </i><br>
+    <i class='eq'><i class="body">ε</i><i class='sub'>x</i>
+        <i class="body"> =</i></i>
+    <i class='eq'><i class="body">σ</i><i class='sub'>x</i>
   <hr class='line'>
- E
+ <i class="body">E</i>
 </i> 
-        <i class='eq'>  - </i>
-    <i class='eq'>v σ<i class='sub'>y</i>
+        <i class='eq'><i class="body">  - </i></i>
+    <i class='eq'><i class="body">v σ</i><i class='sub'>y</i>
   <hr class='line'>
- E
+ <i class="body">E</i>
 </i> 
 
-       <i class='eq'>  - </i>
-    <i class='eq'>v σ<i class='sub'>z</i>
+       <i class='eq'><i class="body">  - </i></i>
+    <i class='eq'><i class="body">v σ</i><i class='sub'>z</i>
   <hr class='line'>
- E
+ <i class="body">E</i>
 </i> 
     <br>
     <!-- -------------------->
-        <i class='eq'>ε<i class='sub'>y</i> = - </i>
-    <i class='eq'>v σ<i class='sub'>x</i>
+        <i class='eq'><i class="body">ε</i><i class='sub'>y</i> = - </i>
+    <i class='eq'><i class="body">v σ</i><i class='sub'>x</i>
   <hr class='line'>
- E
+ <i class="body">E</i>
 </i> 
-        <i class='eq'>  + </i>
-    <i class='eq'>σ<i class='sub'>y</i>
+        <i class='eq'><i class="body">  + </i></i>
+    <i class='eq'><i class="body">σ</i><i class='sub'>y</i>
   <hr class='line'>
- E
+ <i class="body">E</i>
 </i> 
 
-       <i class='eq'>  - </i>
-    <i class='eq'>v σ<i class='sub'>z</i>
+       <i class='eq'><i class="body">  - </i></i>
+    <i class='eq'><i class="body">v σ</i><i class='sub'>z</i>
   <hr class='line'>
- E
+ <i class="body">E</i>
 </i> 
     <br>
         <!-- -------------------->
-        <i class='eq'>ε<i class='sub'>z</i> = - </i>
-    <i class='eq'>v σ<i class='sub'>x</i>
+        <i class='eq'><i class="body">ε</i><i class='sub'>z</i> = - </i>
+    <i class='eq'><i class="body">v σ</i><i class='sub'>x</i>
   <hr class='line'>
- E
+ <i class="body">E</i>
 </i> 
-        <i class='eq'>  - </i>
-    <i class='eq'>v σ<i class='sub'>y</i>
+        <i class='eq'><i class="body">  - </i></i>
+    <i class='eq'><i class="body">v σ</i><i class='sub'>y</i>
   <hr class='line'>
- E
+ <i class="body">E</i>
 </i> 
 
-       <i class='eq'>  + </i>
-    <i class='eq'>σ<i class='sub'>z</i>
+       <i class='eq'><i class="body">  + </i></i>
+    <i class='eq'><i class="body">σ</i><i class='sub'>z</i>
   <hr class='line'>
- E
+ <i class="body">E</i>
 </i> 
     
-<code>
+ <code class="filter">
 Genernlized Hooked Law σ E ε v
 </code>
 </div>
     
 <div>
-    <pre class='eq'>Elastic torsion formula: </pre><br>
-    <i class='eq'>τ =</i>
+    <i class='eq'>Elastic torsion formula: </i><br>
+    <i class='eq'><i class="body">τ =</i></i>
 
-    <i class='eq'>T c
+    <i class='eq'><i class="body">T c</i>
   <hr class='line'>
- J
+ <i class="body">J</i>
 </i> 
     <br>
     <!-- -------------------->
-    <i class='eq'>J =</i>
+    <i class='eq'><i class="body">J =</i></i>
 
-    <i class='eq'>1
+    <i class='eq'><i class="body">1</i>
   <hr class='line'>
- 2
+ <i class="body">2</i>
 </i> 
-    <i class='eq'>π (c<i class='sub'>2</i><i class='sup'>4</i> - c<i class='sub'>1</i><i class='sup'>4</i>)</i>
+    <i class='eq'><i class="body">π (c</i><i class='sub'>2</i><i class='sup'>4</i><i class="body"> - c</i><i class='sub'>1</i><i class='sup'>4</i>)</i>
     
-<code>
+<code class="filter">
 = / Elastic torsion formula τ T c J π
 </code>
 </div>
     
 <div>
-    <i class='eq'>Angle of twist: Φ =</i>
-    <i class='eq'>T L
+    <i class='eq'><i class="body">Angle of twist: Φ =</i></i>
+    <i class='eq'><i class="body">T L</i>
   <hr class='line'>
- J G
+<i class="body"> J G</i>
 </i> 
-<code>
-= / δ P L A E Elongation
+<code class="filter">
+= Angle of twist Φ T L J G
 </code>
 </div>
     
+<div>
+    <i class='eq'><i class="body">T =</i></i>
+    <i class='eq'><i class="body">P</i>
+  <hr class='line'>
+ <i class="body">ω</i>
+</i> 
+ <code class="filter">
+= / P T ω
+</code>
+    
+</div>
+    
+    <script src="js/effects.js"></script>
 </body>
     
-<script>
-function myFunction() {
-    var input, filter, ul, line, a, i;
-    var chap1=0;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase(); //So all text to Upper Case
-    ul = document.getElementById("myUL");
-    line = ul.getElementsByTagName("div");
-    for (i = 0; i < line.length; i++) {
-        content = line[i].getElementsByTagName("code")[0];
-        if (content.innerHTML.toUpperCase().indexOf(filter) > -1) { //Find if a formula contain the text
-            line[i].style.display = "";
-        } else {
-            
-            line[i].style.display = "none";
-            
-           // if (i==1) {chap1++};
-           // if (i==2) {chap1++};
-           // if (chap1!=2) {line[0].style.display = "";} else {line[0].style.display = "none";}
-            
-            
-
-        }
-    }
-}
-</script>
     
 </html>
