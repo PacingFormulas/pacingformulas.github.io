@@ -13,7 +13,9 @@
   display:inline-block;
   font:italic 1.5em calibri;
   vertical-align:middle;
+  text-align:center;
 }
+
 .line
 {
   border:1px solid;
@@ -30,6 +32,7 @@
   font-size:0.5em;
   vertical-align:bottom;
 }
+
 .flip-greek
 {
     transform : rotateZ(98deg) scale(1, -1);
@@ -75,9 +78,17 @@
 .detail
 {
     font-size: 18px;
-    color: white;
+    color: snow;
     background-color: deepskyblue;
   display:inline-flex;    
     padding: 3px 5px 3px 5px; /* Add some padding */
   vertical-align:middle;
+    border-top: 3px dotted white;
+}
+.eq-box
+{
+  /*  background-color: rgba(149, 243, 255, 0.45); */
+  display:inline-block;    
+  /*   border-left: 6px solid lightskyblue; */
+    
 }
