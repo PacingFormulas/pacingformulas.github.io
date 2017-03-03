@@ -71,3 +71,25 @@ function filtervalue(letter) {
     
 filterfn()
 }
+
+function detailMode() {
+    
+    var i;
+    var check = document.getElementById("myCheck").checked
+    
+    if (check == true) {
+    var detail = document.getElementsByClassName("detailOff");
+    var dlenght = detail.length; //substitution will change length n-1
+        
+    for (i = 0; i < dlenght; i++) {
+    detail[0].className = "detail"; //substitution will make all index to 0
+    }
+    } else {
+    var detail = document.getElementsByClassName("detail")
+    var dlenght = detail.length;
+        
+    for (i = 0; i < dlenght; i++) {
+    detail[0].className = "detailOff";
+    }
+    }
+}
