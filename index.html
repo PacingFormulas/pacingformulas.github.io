@@ -14,13 +14,14 @@
     <button class="greek" type="button" onclick="filtervalue(8)">θ</button>
     <button class="greek" type="button" onclick="filtervalue(16)">π</button>
     <button class="greek" type="button" onclick="filtervalue(18)">σ</button>
+    <button class="greek" type="button" onclick="filtervalue(19)">τ</button>
     <button class="greek" type="button" onclick="filtervalue(21)">Φ</button>
     <button class="greek" type="button" onclick="filtervalue(24)">ω</button>
     
     <br>
     <button class="clear-bn" style="margin: 5px 0px 0 18px" type="button" onclick="filtervalue(-1)">Clear</button>
     
-  <input type="checkbox" id="myCheck" value="Bike" onclick="if(this.checked){detailMode()} else {detailMode()}">Detail (Imcomplete)<br>
+  <input type="checkbox" id="myCheck" value="Bike" onclick="if(this.checked){detailMode()} else {detailMode()}">Detail<br>
     
    <!-- <br><br></i> -->
 
@@ -45,16 +46,16 @@ Chapter 1
 </i> 
 <br>
  <code class="detailOff">
-σ: Normal Stress (Unit: N/m^2 lb/in^2)
+σ: Normal Stress (Unit: Pa/psi)
 <br>
-P: Pressure (Unit: N/lb)
+P: Force Normal to Area (Unit: N/lb)
 <br>
-A: Area (Unit: m^2/in^2)
+A: Cross Sectional Area (Unit: m^2/in^2)
 </code>
  <code class="filter">
 = / P A σ Normal Stress
 </code>
-    
+    <br>
 </div>
  
 
@@ -66,16 +67,40 @@ A: Area (Unit: m^2/in^2)
 </i> 
 <br>
  <code class="detailOff">
-σ: Normal Stress (Unit: N/m^2 lb/in^2)
+τ: Shearing Stress (Unit: N/m^2 lb/in^2)
 <br>
-P: Pressure (Unit: N/lb)
+P: Force parallel to Area (Unit: N/lb)
 <br>
-A: Area (Unit: m^2/in^2)
+A: Cross Sectional Area (Unit: m^2/in^2)
 </code>
  <code class="filter">
 = / P A τ Shearing Stress
 </code>
 </div>
+    
+<div>
+	<i class='eq'><i class="body">Stress on an Oblique Plane:</i></i><br>
+	<i class='eq'><i class="body">σ =</i></i> <i class='eq'><i class="body">P</i>
+	<hr class='line'>
+	<i class="body">A</i></i> <i class='eq'><i class="body">cos</i><i class='sup'>2</i> <i class="body">θ</i></i><br>
+    
+	<i class='eq'><i class="body">τ =</i></i> <i class='eq'><i class="body">P</i>
+	<hr class='line'>
+	<i class="body">A</i></i> <i class='eq'><i class="body">sinθ cosθ</i></i><br>
+    
+	<code class="detailOff">
+    σ: Normal Stress (Unit: N/m^2 lb/in^2)<br>
+    τ: Shearing Stress (Unit: N/m^2 lb/in^2)<br>
+	P: Force normal to Area (Unit: N/lb)<br>
+	A: Normal Sectional Area (Unit: m^2/in^2)<br>
+    θ: Angle forming with normal plane<br>
+    
+    </code> 
+    
+    <code class="filter">= / P A σ τ Stress on an Oblique Plane θ sin cos</code>
+
+</div>
+    
     
 
 <div>
@@ -86,16 +111,15 @@ A: Area (Unit: m^2/in^2)
 </i> 
 <br>
  <code class="detailOff">
-σ: Normal Stress (Unit: N/m^2 lb/in^2)
-<br>
-P: Pressure (Unit: N/lb)
-<br>
-A: Area (Unit: m^2/in^2)
+ε: Normal Strain (Unitless: ratio)<br>
+δ: Elongation (Unit: m/in)<br>
+L: Length (Unit: m/in)
 </code>
  <code class="filter">
 = / δ L ε Normal Strain
 </code>
 </div>
+    
     
     <div>
     <i class='eq'><i class="body">σ =</i></i>
@@ -103,16 +127,15 @@ A: Area (Unit: m^2/in^2)
 </i> 
 <br>
  <code class="detailOff">
-σ: Normal Stress (Unit: N/m^2 lb/in^2)
-<br>
-P: Pressure (Unit: N/lb)
-<br>
-A: Area (Unit: m^2/in^2)
+σ: Normal Stress (Unit: Pa/psi)<br>
+E: Young's Modulus (Unit: Pa/psi)<br>
+ε: Normal Strain (Unitless: ratio)
 </code>
  <code class="filter">
 = E ε σ Normal Stress
 </code>
 </div>
+    
   
     
 <div>
@@ -121,20 +144,38 @@ A: Area (Unit: m^2/in^2)
   <hr class='line'>
  <i class="body">A E</i>
 </i> 
+<br> 
+ <code class="detailOff">
+δ: Elongation (Unit: m/in)<br>
+P: Force normal to Area (Unit: N/lb)<br>
+L: Length (Unit: m/in)<br>
+A: Cross Sectional Area (Unit: m^2/in^2)<br>
+E: Young's Modulus (Unit: Pa/psi)
+</code>
  <code class="filter">
 = / δ P L A E Elongation
 </code>
 </div>
+    
         
 <div>
     <i class='eq'><i class="body">τ</i><i class='sub'>ij</i>
         <i class="body"> =</i></i>
     <i class='eq'><i class="body">G γ</i><i class='sub'>ij</i>
 </i> 
+<br> 
+    
+ <code class="detailOff">
+τ: Shearing Stress (Unit: N/m^2 lb/in^2)<br>
+ij: in i and j direction (x/y/z)<br>
+G: Modulus of rigidity/ Shear modulus (Unit: Pa/psi)<br>
+γ: angle reduction
+</code>
  <code class="filter">
 = τ G γ
 </code>
 </div>
+    
     
 <div>
     <i class='eq'><i class="body">γ</i><i class='sub'>ij</i>
@@ -145,10 +186,16 @@ A: Area (Unit: m^2/in^2)
   <hr class='line'>
  <i class="body">Adjacent</i>
 </i> 
+    
+<br>  
+ <code class="detailOff">
+γ: angle reduction
+</code>
  <code class="filter">
 ≈ = / γ tan Opposite Adjacent
 </code>
 </div>
+    
     
 <div>
     <i class='eq body'>Genernlized Hooked Law: </i><br>
@@ -206,13 +253,39 @@ A: Area (Unit: m^2/in^2)
  <i class="body">E</i>
 </i> 
     
+<br>  
+ <code class="detailOff">
+ε: Normal Strain (Unitless: ratio)<br>
+σ: Normal Stress (Unit: Pa/psi)<br>
+v: Poisson's ratio (Unitless: ratio)<br>
+E: Young's Modulus (Unit: Pa/psi)
+</code>
  <code class="filter">
 Genernlized Hooked Law σ E ε v
 </code>
 </div>
     
 <div>
-    <i class='eq'>Elastic torsion formula: </i><br>
+    <i class='eq'><i class="body">Concentrated stresses: K =</i></i>
+    <i class='eq'><i class="body">σ</i><i class='sub'>max</i>
+  <hr class='line'>
+<i class="body">σ</i><i class='sub'>ave</i>
+    </i>
+
+<br>
+ <code class="detailOff">
+K: Stress concentration factor, found in table (Unitless: ratio)<br>
+σ-max: Max Normal Stress (Unit: Pa/psi)<br>
+σ-ave: Reference Normal Stress (Unit: Pa/psi)
+</code>
+<code class="filter">
+= K σ Concentrated stresses
+</code>
+</div>
+    
+    
+<div>
+    <i class='eq'><i class="body">Elastic torsion formula: </i></i><br>
     <i class='eq'><i class="body">τ =</i></i>
 
     <i class='eq'><i class="body">T c</i>
@@ -229,10 +302,19 @@ Genernlized Hooked Law σ E ε v
 </i> 
     <i class='eq'><i class="body">π (c</i><i class='sub'>2</i><i class='sup'>4</i><i class="body"> - c</i><i class='sub'>1</i><i class='sup'>4</i>)</i>
     
+
+<br>  
+ <code class="detailOff">
+τ: Shearing Stress (Unit: N/m^2 lb/in^2)<br>
+T: External torque (Unit: N*m lb*in)<br>
+c: radius (Unit: m in)<br>
+J: Polar moment of inertia (Unit: m^4 in^4)
+</code>
 <code class="filter">
 = / Elastic torsion formula τ T c J π
 </code>
 </div>
+    
     
 <div>
     <i class='eq'><i class="body">Angle of twist: Φ =</i></i>
@@ -240,10 +322,20 @@ Genernlized Hooked Law σ E ε v
   <hr class='line'>
 <i class="body"> J G</i>
 </i> 
+
+<br>
+ <code class="detailOff">
+Φ: angle of twist (Unit: rad)<br>
+T: External torque (Unit: N*m lb*in)<br>
+L: Length (Unit: m/in)<br>
+J: Polar moment of inertia (Unit: m^4 in^4)<br>
+G: Modulus of rigidity/ Shear modulus (Unit: Pa/psi)
+</code>
 <code class="filter">
 = Angle of twist Φ T L J G
 </code>
 </div>
+    
     
 <div>
     <i class='eq'><i class="body">T =</i></i>
@@ -251,10 +343,93 @@ Genernlized Hooked Law σ E ε v
   <hr class='line'>
  <i class="body">ω</i>
 </i> 
+    <i class='eq'><i class="body">=</i></i>
+    <i class='eq'><i class="body">P</i>
+  <hr class='line'>
+ <i class="body">2π f</i>
+</i> 
+<br>
+ <code class="detailOff">
+T: External torque (Unit: N*m lb*in)<br>
+P: Force Normal to Area (Unit: N/lb) <br>
+ω: Angular velocity (Unit: rad/s)> <br>
+f: frequency (Unit: Hz 1/s)
+</code>
  <code class="filter">
-= / P T ω
+= / P T ω f π
 </code>
     
+</div>
+    
+<div>
+    <i class='eq'><i class="body">Distributed torque: Φ = ∫ <i class='sub'>0</i><i class='sup'>L</i>  </i></i>
+    <i class='eq'><i class="body">T(x)</i>
+  <hr class='line'>
+<i class="body"> J(x) G</i>
+</i> 
+
+<br>
+ <code class="detailOff">
+Φ: angle of twist (Unit: rad)<br>
+T(x): internal torque at location x (Unit: N*m lb*in)<br>
+L: Length (Unit: m/in)<br>
+J(x): Polar moment of inertia at x (Unit: m^4 in^4)<br>
+G: Modulus of rigidity/ Shear modulus (Unit: Pa/psi)
+</code>
+<code class="filter">
+= Distributed torque Φ T L J G
+</code>
+</div>
+    
+<div>
+    <i class='eq'><i class="body">Circular torsion formula: τ<i class='sub'>max</i> =K</i></i>
+    <i class='eq'><i class="body">T c</i>
+  <hr class='line'>
+<i class="body">J</i>
+    </i>
+
+<br>
+ <code class="detailOff">
+τ-max: Shearing Stress (Unit: N/m^2 lb/in^2)<br>
+K: Stress concentration factor, found in table (Unitless: ratio)<br>
+T: External torque (Unit: N*m lb*in)<br>
+c: radius (Unit: m in)<br>
+J: Polar moment of inertia (Unit: m^4 in^4)
+</code>
+<code class="filter">
+= Circular torsion formula τ K T c J
+</code>
+</div>
+    
+<div>
+    <i class='eq'><i class="body">NonCircular torsion formula:</i></i> <br>
+     <i class='eq'><i class="body"> τ<i class='sub'>max</i> =</i></i>
+    <i class='eq'><i class="body">T</i>
+  <hr class='line'>
+<i class="body">c</i><i class='sub'>1</i><i class="body"> a b</i><i class='sup'>2</i> </i>
+    </i>
+
+<br>
+    <i class='eq'><i class="body">Φ =</i></i>
+    <i class='eq'><i class="body">T L</i>
+  <hr class='line'>
+<i class="body">c</i><i class='sub'>2</i><i class="body"> a b</i><i class='sup'>3</i><i class="body"> G</i>
+    </i>
+
+<br>
+    
+ <code class="detailOff">
+τ-max: Shearing Stress (Unit: N/m^2 lb/in^2)<br>
+c1&c2: found in table<br>
+a: long edge (Unit: m in)<br>
+b: short edge (Unit: m in)<br>
+Φ: angle of twist (Unit: rad)<br>
+L: Length (Unit: m/in)<br>
+G: Modulus of rigidity/ Shear modulus (Unit: Pa/psi)
+</code>
+<code class="filter">
+= NonCircular torsion formula τ T c a b G L Φ
+</code>
 </div>
     
     <script src="js/effects.js"></script>
