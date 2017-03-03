@@ -1,3 +1,12 @@
+.filter-box
+{
+    width: 75%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 20px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-left: 12px; /* Add some space below the input */
+    border-left: 6px solid rgb(0, 157, 255);
+}
 
 .eq
 {
@@ -30,12 +39,36 @@
     padding-bottom: 40px;
 }
 
-code
+.filter
 {
   display: none;
 }
 .chap
 {
   font:italic 2em calibri;
-  vertical-align:lefft;
+  vertical-align:left;
+}
+
+.high-light
+{
+    color: crimson;
+}
+
+.greek
+{
+    
+    font-size: 18px; /* Increase font-size */
+    color: ghostwhite;
+    background-color: deepskyblue;
+    border: none;
+    
+}
+.clear-bn
+{
+    
+    font-size: 18px; /* Increase font-size */
+    color: ghostwhite;
+    background-color: orange;
+    border: none;
+    
 }
