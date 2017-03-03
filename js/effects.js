@@ -27,6 +27,10 @@ function filterfn() {
             
             line[i].style.display = "";
             
+            for (j = 0; j < line.length; j++) {
+            ul.innerHTML= ul.innerHTML.replace("<div>"+"("+j+")", "<div>"); //switch back
+    }
+            
             
         } else {
             
@@ -36,10 +40,15 @@ function filterfn() {
            // if (i==2) {chap1++};
            // if (chap1!=2) {line[0].style.display = "";} else {line[0].style.display = "none";}
             
+    for (j = 0; j < line.length; j++) {
+            ul.innerHTML= ul.innerHTML.replace("<div>"+"("+j+")", "<div>"); //switch back
+    }
             
 
         }
     }
+    
+    listfn()
 }
     
 function filtervalue(letter) {
@@ -57,6 +66,8 @@ function filtervalue(letter) {
         text = "π"
     } else if (letter==18)  {
         text = "σ"
+    } else if (letter==19)  {
+        text = "τ"
     } else if (letter==21)  {
         text = "Φ"
     } else if (letter==24)  {
@@ -73,7 +84,7 @@ filterfn()
 }
 
 function detailMode() {
-    
+
     var i;
     var check = document.getElementById("myCheck").checked
     
@@ -91,5 +102,34 @@ function detailMode() {
     for (i = 0; i < dlenght; i++) {
     detail[0].className = "detailOff";
     }
+    }
+}
+
+function listfn() {
+    
+    var j, ul, line;
+    
+    ul = document.getElementById("myUL");
+    line = ul.getElementsByTagName("div");
+    full = line.length;
+    
+    //clean all list number first:
+    for (j = 0; j < full; j++) {
+            ul.innerHTML= ul.innerHTML.replace("<div>"+"("+j+")", "<div>"); //switch back
+    }
+    
+    
+    for (j = 0; j < full; j++) {
+        if(line[j].style.display == ""){
+            ul.innerHTML= ul.innerHTML.replace("<div>", "<div style=\"color:red;\">"+"("+j+")");
+            } else {
+            ul.innerHTML= ul.innerHTML.replace("<div>", "<div style=\"color:yellow;\">"+"("+j+")");
+            }
+        //alert("yes")
+        }
+    
+    for (j = 0; j < full; j++) {
+            ul.innerHTML= ul.innerHTML.replace("<div style=\"color:red;\">", "<div>"); //switch back
+            ul.innerHTML= ul.innerHTML.replace("<div style=\"color:yellow;\">", "<div>"); //switch back
     }
 }
