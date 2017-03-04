@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/effects.css" href="effects.css">
+</head>
+    
+<body>
+
+    
+    <a href="index.html" class="clear-bn" style="margin: 5px 0px 0 18px; background-color: limegreen"><== Back</a> <br><br>
+    
+ <input class="filter-box" type="text" id="myInput" onkeyup="filterfn()" placeholder="Type keywords" title="Type keywords">   
+    
+    <br>
+    <button class="greek" style="margin: 5px 0px 0 18px" type="button" onclick="filtervalue(3)">γ</button>
+    <button class="greek" type="button" onclick="filtervalue(4)">δ</button>
+    <button class="greek" type="button" onclick="filtervalue(5)">ε</button>
+    <button class="greek" type="button" onclick="filtervalue(8)">θ</button>
+    <button class="greek" type="button" onclick="filtervalue(16)">π</button>
+    <button class="greek" type="button" onclick="filtervalue(18)">σ</button>
+    <button class="greek" type="button" onclick="filtervalue(19)">τ</button>
+    <button class="greek" type="button" onclick="filtervalue(21)">Φ</button>
+    <button class="greek" type="button" onclick="filtervalue(24)">ω</button>
+    
+    <br>
+    <button class="clear-bn" style="margin: 5px 0px 0 18px" type="button" onclick="filtervalue(-1)">Clear</button>
+    
+  <input type="checkbox" id="myCheck" value="Bike" onclick="if(this.checked){detailMode()} else {detailMode()}">Detail<br>
+    
+   <!-- <br><br></i> -->
+
+    
+<ul id="myUL">
+  
+<!-- 
+<div>
+<i class='chap'>
+Chapter 1
+<hr>
+</i>
+ <code class="filter">
+</code>
+</div> -->
+    
+<div>
+    <i class='eq'><i class="body">Kinematic Equations (when a = constant): </i></i><br>
+    <i class='eq'><i class="body">V = a*t + V</i><i class="sub">0 </i></i><br>
+    
+    <i class='eq'><i class="body">X = </i></i>
+    <i class='eq'><i class="body">1</i><hr class='line'><i class="body">2</i></i>
+    <i class='eq'><i class="body">a*t</i><i class="sup">2</i>
+    <i class="body">+ V</i><i class="sub">0 </i>
+    <i class="body">t + X</i><i class="sub">0 </i></i><br>
+    
+    
+    <i class='eq'><i class="body">V</i><i class="sup"> 2</i><i class="body">- V</i><i class="sub">0</i><i class="sup">2</i> 
+    <i class="body"> = 2a (X-X</i><i class="sub">0</i><i class="body">)</i></i><br>
+    
+ <code class="detailOff">
+V: final velocity (Unit: m/2 ft/2)<br>
+V0: initial velocity (Unit: m/2 ft/2)<br>
+t: time (Unit: sec)<br>
+a: acceleration (Unit: m/sec^2 ft/sec^2)<br>
+X: final distance (Unit: m)<br>
+X0: initial distance (Unit: m)
+</code>
+ <code class="filter">
+= / Kinematic Equations (when a = constant): V = a*t 1 2 X + - ( )
+</code>
+    <br>
+    
+</div>
+ 
+<div>
+    
+    <i class='eq'><i class="body">Relative motion: a</i><i class="sub">A/B</i>
+    <i class="body"> = a</i><i class="sub">A</i><i class="body">- a</i><i class="sub">B</i></i>
+    
+ <code class="detailOff">
+a: acceleration (Unit: m/sec^2 ft/sec^2)
+</code>
+ <code class="filter">
+= Relative motion: a
+</code>
+    <br><br>
+    
+</div>
+    
+<div>
+    
+    <i class='eq'><i class="body">Law of consines:</i></i><br>
+    <img src="http://hyperphysics.phy-astr.gsu.edu/hbase/imgmth/lcos.gif" alt="Law of consines">
+ <code class="detailOff">
+none
+</code>
+ <code class="filter">
+Law of consines: c a b cos 2
+</code>
+    <br>
+    
+</div>
+    
+<div>
+    
+    <i class='eq'><i class="body">Law of sines:</i></i><br>
+    <img src="http://hyperphysics.phy-astr.gsu.edu/hbase/imgmth/lsin.gif" alt="Law of sines">
+ <code class="detailOff">
+none
+</code>
+ <code class="filter">
+Law of sines: c a b sin
+</code>
+    <br>
+    
+</div>
+    
+<div>
+    
+    <i class='eq'><i class="body">Equation of trajectory:</i></i><br>
+    <img src="http://images.tutorvista.com/cms/images/83/trajectory-formula1.PNG" alt="Equation of trajectory">
+ <code class="detailOff">
+none
+</code>
+ <code class="filter">
+Equation of trajectory: y x tan - g x v V cos
+</code>
+    <br>
+    
+</div>
+    
+    
+    <script src="js/effects.js"></script>
+</body>
+    
+    
+</html>
