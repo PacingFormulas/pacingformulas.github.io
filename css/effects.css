@@ -73,6 +73,7 @@
     color: ghostwhite;
     background-color: orange;
     border: none;
+    text-decoration: none;
     
 }
 .detail
@@ -90,5 +91,20 @@
   /*  background-color: rgba(149, 243, 255, 0.45); */
   display:inline-block;    
   /*   border-left: 6px solid lightskyblue; */
+    
+}
+
+.classtitle
+{
+    
+    font-size: 26px; /* Increase font-size */
+    color: ghostwhite;
+  display:inline-flex;    
+    border: none;
+    padding: 15px 15px 15px 15px; /* Add some padding */
+  display:inline-block;
+  font: 1.5em calibri;
+    text-decoration: none;
+  text-align:center;
     
 }
