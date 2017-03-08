@@ -8,6 +8,13 @@
     border-left: 6px solid rgb(0, 157, 255);
 }
 
+.concept
+{
+  font:normal 22px calibri;
+  vertical-align:left;
+  text-align:left;
+}
+
 .eq
 {
   display:inline-block;
