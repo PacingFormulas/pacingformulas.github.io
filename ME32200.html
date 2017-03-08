@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/effects.css" href="effects.css">
+</head>
+    
+<body>
+
+    
+    <a href="index.html" class="clear-bn" style="margin: 5px 0px 0 18px; background-color: limegreen"><== Back</a> <br><br>
+    
+ <input class="filter-box" type="text" id="myInput" onkeyup="filterfn()" placeholder="Type keywords" title="Type keywords">   
+    
+    <br>
+    <button class="greek" style="margin: 5px 0px 0 18px" type="button" onclick="filtervalue(3)">γ</button>
+    <button class="greek" type="button" onclick="filtervalue(4)">δ</button>
+    <button class="greek" type="button" onclick="filtervalue(5)">ε</button>
+    <button class="greek" type="button" onclick="filtervalue(8)">θ</button>
+    <button class="greek" type="button" onclick="filtervalue(16)">π</button>
+    <button class="greek" type="button" onclick="filtervalue(18)">σ</button>
+    <button class="greek" type="button" onclick="filtervalue(19)">τ</button>
+    <button class="greek" type="button" onclick="filtervalue(21)">Φ</button>
+    <button class="greek" type="button" onclick="filtervalue(24)">ω</button>
+    
+    <br>
+    <button class="clear-bn" style="margin: 5px 0px 0 18px" type="button" onclick="filtervalue(-1)">Clear</button>
+    
+  <input type="checkbox" id="myCheck" value="Bike" onclick="if(this.checked){detailMode()} else {detailMode()}">Detail<br>
+    
+   <!-- <br><br></i> -->
+
+    
+<ul id="myUL">
+  
+<div>
+        <i class='eq'><i class="body">Flow Chart</i></i><br>
+    <img src="https://wcs.smartdraw.com/flowchart/img/basic-symbols.jpg?bn=1510011088" alt="Flow Chart">
+ <code class="detailOff">
+none
+</code>
+ <code class="filter">
+Flow Chart
+</code>
+    <br><hr>
+    
+</div>
+    
+<div>
+    <i class='eq'><i class="body">Bisection Methods (not include iter)</i></i><br>
+    
+    <img src="pic/bi-section.PNG" alt="Bisection">     
+             
+ <code class="detailOff">
+none
+</code>
+ <code class="filter">
+Bisection Methods
+</code>
+    <br><hr>
+    
+</div>
+    
+<div>
+    <i class='eq'><i class="body">Regula Falsi (Modified Version are highlighted by yellow color)</i></i><br>
+    
+    <img src="pic/regula.png" alt="Bisection">     
+             
+ <code class="detailOff">
+none
+</code>
+ <code class="filter">
+Regula Falsi (Modified are highlighted by yellow color)
+</code>
+    <br><hr>
+    
+</div>
+    
+<div>
+    <i class='eq'><i class="body">Secant Method</i></i><br>
+    
+    <img src="pic/secant.png" alt="Bisection">     
+             
+ <code class="detailOff">
+none
+</code>
+ <code class="filter">
+Secant Method
+</code>
+    <br>
+
+<b>Secant Method & Falsi Method both use same approach</b><br>
+<b>Falsi Method make [a, b] span around the root, while Secant Method only [xp, xm] change position of xm</b><br>
+    
+</div>
+    
+    
+    <script src="js/effects.js"></script>
+</body>
+    
+    
+</html>
