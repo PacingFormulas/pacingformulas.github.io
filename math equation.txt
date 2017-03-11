@@ -1,0 +1,3 @@
+a_{t} = \frac{\text{d}v}{\text{d}t} = \dot{\rho}\dot{\theta} + {\rho}\ddot{\theta} = r\alpha \\
+a_{n} = \frac{v^{2}}{\rho} = {\rho}{\omega}^{2} = {\rho}\dot{\theta}^{2}\\
+a=\sqrt{a_{n}^{2}+a_{t}^{2}}\\
